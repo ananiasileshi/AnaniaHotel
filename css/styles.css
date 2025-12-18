@@ -488,6 +488,7 @@ p {
   font-size: clamp(1.75rem, 4vw, var(--text-4xl));
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+  margin-top: 50px;
   text-align: center;
   margin-bottom: var(--space-12);
   letter-spacing: 0.05em;
@@ -1578,12 +1579,43 @@ p {
 
 .property-description {
   margin-bottom: var(--space-8);
+  padding: var(--space-8) 0;
+}
+
+.description-content {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: var(--space-8);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #dee2e6;
 }
 
 .property-description p {
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
+  color: #2c3e50;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  padding-left: var(--space-6);
+}
+
+.property-description p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 20px;
+  background: var(--property-accent, #FFD700);
+  border-radius: 2px;
+}
+
+.property-description p:last-child {
+  margin-bottom: 0;
 }
 
 .property-cta {
