@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anania Hotel - Every City Has a Story</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Global Header -->
+    <header class="global-header" id="globalHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="brand">
+                    <a href="index.html" class="brand-mark">Anania Hotel</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="locations-dropdown">
+                    <button class="locations-toggle" id="locationsToggle">
+                        Locations
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="locations-menu" id="locationsMenu">
+                        <div class="locations-group">
+                            <h3>Ethiopia</h3>
+                            <ul>
+                                <li><a href="properties/addisababa.html">Addis Ababa</a></li>
+                                <li><a href="properties/adama.html">Adama</a></li>
+                                <li><a href="properties/bishoftu.html">Bishoftu</a></li>
+                                <li><a href="properties/gonder.html">Gonder</a></li>
+                                <li><a href="properties/bahirdar.html">Bahir Dar</a></li>
+                                <li><a href="properties/mekele.html">Mekele</a></li>
+                                <li><a href="properties/harar.html">Harar</a></li>
+                                <li><a href="properties/ziway.html">Ziway</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="book-now-btn" id="bookNowBtn">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Welcome to Anania Hotel</h1>
+                        <p class="hero-subtitle">Every city has a story</p>
+                        <button class="hero-cta" id="exploreBtn">Explore Locations</button>
+                        <button class="hero-cta">Book a Stay</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section class="locations-section">
+            <div class="container">
+                <h2 class="section-title">Our Locations</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <a href="properties/addisababa.html" class="location-link">
+                            <div class="location-image" style="background-image: url('assets/images/addisababa.jpg');"></div>
+                            <div class="location-content">
+                                <h3>Addis Ababa</h3>
+                                <p class="location-vibe">Capital city with vibrant culture</p>
+                            </div>
+                        </a>
+                    </div>
+                <div class="location-card">
+                    <a href="properties/adama.html" class="location-link">
+                        <div class="location-image" style="background-image: url('assets/images/adama.jpg');"></div>
+                        <div class="location-content">
+                            <h3>Adama</h3>
+                            <p class="location-vibe">Gateway to the Rift Valley</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="location-card">
+                    <a href="properties/bishoftu.html" class="location-link">
+                        <div class="location-image" style="background-image: url('assets/images/bishoftu.jpg');"></div>
+                        <div class="location-content">
+                            <h3>Bishoftu</h3>
+                            <p class="location-vibe">Lakeside serenity and natural beauty</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="location-card">
+                    <a href="properties/gonder.html" class="location-link">
+                        <div class="location-image" style="background-image: url('assets/images/gonder.jpg');"></div>
+                        <div class="location-content">
+                            <h3>Gonder</h3>
+                            <p class="location-vibe">Historic castles and royal heritage</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="location-card">
+                    <a href="properties/bahirdar.html" class="location-link">
+                        <div class="location-image" style="background-image: url('assets/images/bahirdar.jpg');"></div>
+                        <div class="location-content">
+                            <h3>Bahir Dar</h3>
+                            <p class="location-vibe">Blue Nile and Lake Tana paradise</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="location-card">
+                    <a href="properties/mekele.html" class="location-link">
+                        <div class="location-image" style="background-image: url('assets/images/mekele.jpg');"></div>
+                        <div class="location-content">
+                            <h3>Mekele</h3>
+                            <p class="location-vibe">Gateway to Tigray's ancient wonders</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="location-card">
+                    <a href="properties/harar.html" class="location-link">
+                        <div class="location-image" style="background-image: url('assets/images/harar.jpg');"></div>
+                        <div class="location-content">
+                            <h3>Harar</h3>
+                            <p class="location-vibe">Ancient walled city of culture</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="location-card">
+                    <a href="properties/ziway.html" class="location-link">
+                        <div class="location-image" style="background-image: url('assets/images/ziway.jpg');"></div>
+                        <div class="location-content">
+                            <h3>Ziway</h3>
+                            <p class="location-vibe">Peaceful lakeside retreat</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Carousel -->
+        <section class="offers-section">
+            <div class="container">
+                <h2 class="section-title">Current Offers</h2>
+                <div class="offers-carousel" id="offersCarousel">
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Anania Member Rate</h3>
+                            <p>Exclusive rates for our loyal members</p>
+                            <div class="offer-price">From $149/night</div>
+                            <button class="offer-cta">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Pay Now & Save</h3>
+                            <p>Save up to 20% with prepaid rates</p>
+                            <div class="offer-price">From $129/night</div>
+                            <button class="offer-cta">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Extended Stay</h3>
+                            <p>Stay longer, save more on weekly rates</p>
+                            <div class="offer-price">From $119/night</div>
+                            <button class="offer-cta">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Last Minute Deal</h3>
+                            <p>Spontaneous escapes at great prices</p>
+                            <div class="offer-price">From $99/night</div>
+                            <button class="offer-cta">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Goings On -->
+        <section class="global-events-section">
+            <div class="container">
+                <h2 class="section-title">Goings On</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Live Jazz Night</h3>
+                            <p class="event-time">8:00 PM - 11:00 PM</p>
+                            <p class="event-location">Brooklyn Lobby Bar</p>
+                            <button class="event-cta">RSVP</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="date-day">18</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Art Opening Reception</h3>
+                            <p class="event-time">6:00 PM - 9:00 PM</p>
+                            <p class="event-location">Seattle Gallery</p>
+                            <button class="event-cta">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="date-day">22</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Winter Solstice Celebration</h3>
+                            <p class="event-time">7:00 PM - 12:00 AM</p>
+                            <p class="event-location">Palm Springs Rooftop</p>
+                            <button class="event-cta">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="date-day">28</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Local Market Showcase</h3>
+                            <p class="event-time">10:00 AM - 4:00 PM</p>
+                            <p class="event-location">Kyoto Courtyard</p>
+                            <button class="event-cta">Free Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anania Reader Teasers -->
+        <section class="reader-section">
+            <div class="container">
+                <h2 class="section-title">Anania Reader</h2>
+                <div class="reader-grid">
+                    <article class="reader-card">
+                        <div class="reader-image" style="background-image: url('assets/images/article1.jpg');"></div>
+                        <div class="reader-content">
+                            <h3>Addis Ababa's Jazz Scene</h3>
+                            <p class="reader-excerpt">Exploring the vibrant jazz clubs that define Ethiopia's musical capital</p>
+                            <a href="reader/kyoto-vinyl.html" class="reader-link">Read More</a>
+                        </div>
+                    </article>
+                    <article class="reader-card">
+                        <div class="reader-image" style="background-image: url('assets/images/article2.jpg');"></div>
+                        <div class="reader-content">
+                            <h3>Bahir Dar After Dark</h3>
+                            <p class="reader-excerpt">The artists and musicians shaping Ethiopia's creative landscape</p>
+                            <a href="reader/brooklyn-night.html" class="reader-link">Read More</a>
+                        </div>
+                    </article>
+                    <article class="reader-card">
+                        <div class="reader-image" style="background-image: url('assets/images/article3.jpg');"></div>
+                        <div class="reader-content">
+                            <h3>Desert Modernism</h3>
+                            <p class="reader-excerpt">How Palm Springs became the architectural capital of mid-century design</p>
+                            <a href="reader/desert-modernism.html" class="reader-link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The A-List</h3>
+                    <p>Get stories, offers, and goings-on.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="accessibility.html">Accessibility</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="press.html">Press</a></li>
+                            <li><a href="gift-cards.html">Gift Cards</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Anania Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Overlay -->
+    <div class="booking-overlay" id="bookingOverlay">
+        <div class="booking-modal">
+            <div class="booking-header">
+                <h2>Book Your Stay</h2>
+                <button class="close-booking" id="closeBooking">×</button>
+            </div>
+            <div class="booking-content">
+                <div class="booking-step active" id="step1">
+                    <h3>Search Parameters</h3>
+                    <form class="booking-form" id="searchForm">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location" name="location">
+                                <option value="">Select Location</option>
+                                <option value="addisababa">Addis Ababa</option>
+                                <option value="adama">Adama</option>
+                                <option value="bishoftu">Bishoftu</option>
+                                <option value="gonder">Gonder</option>
+                                <option value="bahirdar">Bahir Dar</option>
+                                <option value="mekele">Mekele</option>
+                                <option value="harar">Harar</option>
+                                <option value="ziway">Ziway</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <select id="guests" name="guests">
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="rooms">Rooms</label>
+                                <select id="rooms" name="rooms">
+                                    <option value="1">1 Room</option>
+                                    <option value="2">2 Rooms</option>
+                                    <option value="3">3 Rooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="codeType">Code Type</label>
+                            <select id="codeType" name="codeType">
+                                <option value="">None</option>
+                                <option value="group">Group</option>
+                                <option value="promo">Promo</option>
+                                <option value="corporate">Corporate</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="codeGroup" style="display: none;">
+                            <label for="code">Code</label>
+                            <input type="text" id="code" name="code" placeholder="Enter code">
+                        </div>
+                        <button type="submit" class="booking-submit">Search Availability</button>
+                    </form>
+                </div>
+                <div class="booking-step" id="step2">
+                    <h3>Select Room</h3>
+                    <div class="rooms-list" id="roomsList">
+                        <!-- Rooms will be populated dynamically -->
+                    </div>
+                </div>
+                <div class="booking-step" id="step3">
+                    <h3>Guest Details</h3>
+                    <form class="booking-form" id="guestForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" name="cardNumber" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="booking-submit">Complete Booking</button>
+                    </form>
+                </div>
+                <div class="booking-step" id="step4">
+                    <h3>Confirmation</h3>
+                    <div class="confirmation-content">
+                        <div class="success-message">
+                            <h2>Booking Confirmed!</h2>
+                            <p>Your reservation number is: <strong>#AN2024121801</strong></p>
+                        </div>
+                        <div class="booking-summary">
+                            <div class="summary-item">
+                                <span class="label">Property:</span>
+                                <span class="value" id="summaryProperty"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="label">Dates:</span>
+                                <span class="value" id="summaryDates"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="label">Guests:</span>
+                                <span class="value" id="summaryGuests"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="label">Room Type:</span>
+                                <span class="value" id="summaryRoom"></span>
+                            </div>
+                            <div class="summary-item total">
+                                <span class="label">Total:</span>
+                                <span class="value" id="summaryTotal"></span>
+                            </div>
+                        </div>
+                        <div class="confirmation-actions">
+                            <button class="btn-secondary">Add to Calendar</button>
+                            <button class="btn-primary">Modify/Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

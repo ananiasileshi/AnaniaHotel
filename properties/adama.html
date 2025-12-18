@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anania Hotel Adama - Gateway to the Rift Valley</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --property-accent: #E2725B; /* Terracotta for Adama */
+        }
+    </style>
+</head>
+<body class="property-accent-adama">
+    <!-- Global Header -->
+    <header class="global-header" id="globalHeader">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="brand">
+                    <a href="../index.html" class="brand-mark">Anania Hotel</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="locations-dropdown">
+                    <button class="locations-toggle" id="locationsToggle">
+                        Locations
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="locations-menu" id="locationsMenu">
+                        <div class="locations-group">
+                            <h3>Ethiopia</h3>
+                            <ul>
+                                <li><a href="addisababa.html">Addis Ababa</a></li>
+                                <li><a href="adama.html">Adama</a></li>
+                                <li><a href="bishoftu.html">Bishoftu</a></li>
+                                <li><a href="gonder.html">Gonder</a></li>
+                                <li><a href="bahirdar.html">Bahir Dar</a></li>
+                                <li><a href="mekele.html">Mekele</a></li>
+                                <li><a href="harar.html">Harar</a></li>
+                                <li><a href="ziway.html">Ziway</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="book-now-btn" id="bookNowBtn">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Property Navigation -->
+    <nav class="property-nav">
+        <div class="container">
+            <div class="property-nav-links">
+                <a href="#overview" class="nav-link active">Overview</a>
+                <a href="#rooms" class="nav-link">Rooms</a>
+                <a href="#offers" class="nav-link">Offers</a>
+                <a href="#events" class="nav-link">Goings On</a>
+                <a href="#dining" class="nav-link">Eat + Drink</a>
+                <a href="#neighborhood" class="nav-link">Neighborhood</a>
+                <a href="#events" class="nav-link">Private Spaces</a>
+                <a href="#shop" class="nav-link">Shop</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Property Hero -->
+        <section class="property-hero" id="overview">
+            <div class="hero-background">
+                <img src="../assets/images/adama-hero.jpg" alt="Anania Hotel Adama">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="property-title">Adama</h1>
+                        <p class="property-subtitle">Gateway to Ethiopia's stunning Rift Valley</p>
+                        <div class="property-cta">
+                            <button class="book-property-btn" id="bookPropertyBtn">Book Your Stay</button>
+                            <button class="explore-rooms-btn">Explore Rooms</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Rooms -->
+        <section class="featured-rooms" id="rooms">
+            <div class="container">
+                <h2 class="section-title">Featured Rooms</h2>
+                <div class="rooms-grid">
+                    <div class="room-card" data-location="brooklyn" data-room-type="small-king">
+                        <div class="room-image" style="background-image: url('../assets/images/brooklyn-room-small.jpg');"></div>
+                        <div class="room-content">
+                            <h3 class="room-name">Small King</h3>
+                            <p class="room-description">Cozy corner room with exposed brick and city views</p>
+                            <div class="room-specs">
+                                <span>25 sq m</span>
+                                <span>•</span>
+                                <span>King Bed</span>
+                                <span>•</span>
+                                <span>2 Guests</span>
+                            </div>
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">$189</span>
+                                <span class="price-period">/night</span>
+                            </div>
+                            <button class="book-room-btn">Book This Room</button>
+                        </div>
+                    </div>
+                    <div class="room-card" data-location="brooklyn" data-room-type="loft-suite">
+                        <div class="room-image" style="background-image: url('../assets/images/brooklyn-room-loft.jpg');"></div>
+                        <div class="room-content">
+                            <h3 class="room-name">Loft Suite</h3>
+                            <p class="room-description">Spacious suite with separate living area and skyline views</p>
+                            <div class="room-specs">
+                                <span>45 sq m</span>
+                                <span>•</span>
+                                <span>King Bed</span>
+                                <span>•</span>
+                                <span>3 Guests</span>
+                            </div>
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">$329</span>
+                                <span class="price-period">/night</span>
+                            </div>
+                            <button class="book-room-btn">Book This Room</button>
+                        </div>
+                    </div>
+                    <div class="room-card" data-location="brooklyn" data-room-type="bunk-room">
+                        <div class="room-image" style="background-image: url('../assets/images/brooklyn-room-bunk.jpg');"></div>
+                        <div class="room-content">
+                            <h3 class="room-name">Bunk Room</h3>
+                            <p class="room-description">Perfect for groups with custom-built industrial bunk beds</p>
+                            <div class="room-specs">
+                                <span>30 sq m</span>
+                                <span>•</span>
+                                <span>Bunk Beds</span>
+                                <span>•</span>
+                                <span>4 Guests</span>
+                            </div>
+                            <div class="room-price">
+                                <span class="price-label">From</span>
+                                <span class="price-amount">$159</span>
+                                <span class="price-period">/night</span>
+                            </div>
+                            <button class="book-room-btn">Book This Room</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms-cta">
+                    <a href="rooms.html" class="view-all-rooms">View All Rooms</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Property Offers -->
+        <section class="property-offers" id="offers">
+            <div class="container">
+                <h2 class="section-title">Brooklyn Offers</h2>
+                <div class="offers-list">
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Brooklyn Artist Rate</h3>
+                            <p>Special rates for creative professionals in the Brooklyn area</p>
+                            <div class="offer-details">
+                                <span class="offer-valid">Valid through Dec 31, 2024</span>
+                                <span class="offer-price">From $149/night</span>
+                            </div>
+                            <div class="offer-terms">
+                                <p>Valid ID required. Subject to availability. Blackout dates may apply.</p>
+                            </div>
+                            <button class="offer-cta" data-promo-code="BROOKLYN_ARTIST">Book with this Offer</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Extended Brooklyn Stay</h3>
+                            <p>Save more when you stay 7+ nights in our Brooklyn location</p>
+                            <div class="offer-details">
+                                <span class="offer-valid">Available year-round</span>
+                                <span class="offer-price">20% off weekly rate</span>
+                            </div>
+                            <div class="offer-terms">
+                                <p>Minimum 7-night stay required. Cannot be combined with other offers.</p>
+                            </div>
+                            <button class="offer-cta" data-promo-code="BROOKLYN_WEEKLY">Book with this Offer</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-content">
+                            <h3>Brooklyn Weekend Package</h3>
+                            <p>Perfect weekend getaway with breakfast included</p>
+                            <div class="offer-details">
+                                <span class="offer-valid">Fri-Sun stays</span>
+                                <span class="offer-price">From $249/night</span>
+                            </div>
+                            <div class="offer-terms">
+                                <p>Includes breakfast for two. Minimum 2-night stay required.</p>
+                            </div>
+                            <button class="offer-cta" data-promo-code="BROOKLYN_WEEKEND">Book with this Offer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goings On -->
+        <section class="property-events" id="events">
+            <div class="container">
+                <h2 class="section-title">Goings On</h2>
+                <div class="events-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="music">Music</button>
+                    <button class="filter-btn" data-filter="art">Art</button>
+                    <button class="filter-btn" data-filter="food">Food & Drink</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                </div>
+                <div class="events-list">
+                    <div class="event-item" data-category="music">
+                        <div class="event-date">
+                            <span class="date-day">19</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Brooklyn Jazz Sessions</h3>
+                            <p class="event-time">8:00 PM - 11:00 PM</p>
+                            <p class="event-location">Lobby Bar</p>
+                            <p class="event-description">Live jazz featuring Brooklyn's finest musicians</p>
+                            <button class="event-cta">RSVP</button>
+                        </div>
+                    </div>
+                    <div class="event-item" data-category="art">
+                        <div class="event-date">
+                            <span class="date-day">21</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Local Artist Showcase</h3>
+                            <p class="event-time">6:00 PM - 9:00 PM</p>
+                            <p class="event-location">Gallery Space</p>
+                            <p class="event-description">Featuring works from Williamsburg's emerging artists</p>
+                            <button class="event-cta">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="event-item" data-category="food">
+                        <div class="event-date">
+                            <span class="date-day">23</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Brooklyn Food Pop-up</h3>
+                            <p class="event-time">12:00 PM - 4:00 PM</p>
+                            <p class="event-location">Rooftop Terrace</p>
+                            <p class="event-description">Local vendors and food trucks gather for a weekend feast</p>
+                            <button class="event-cta">Free Event</button>
+                        </div>
+                    </div>
+                    <div class="event-item" data-category="community">
+                        <div class="event-date">
+                            <span class="date-day">26</span>
+                            <span class="date-month">DEC</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Community Makers Market</h3>
+                            <p class="event-time">10:00 AM - 6:00 PM</p>
+                            <p class="event-location">Hotel Lobby</p>
+                            <p class="event-description">Shop local crafts, art, and Brooklyn-made goods</p>
+                            <button class="event-cta">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eat + Drink -->
+        <section class="property-dining" id="dining">
+            <div class="container">
+                <h2 class="section-title">Eat + Drink</h2>
+                <div class="dining-venues">
+                    <div class="venue-card">
+                        <div class="venue-image" style="background-image: url('../assets/images/brooklyn-lobby-bar.jpg');"></div>
+                        <div class="venue-content">
+                            <h3 class="venue-name">Lobby Bar</h3>
+                            <p class="venue-description">Industrial-chic bar serving craft cocktails and local brews</p>
+                            <div class="venue-hours">
+                                <span>Mon-Thu: 4PM-12AM</span>
+                                <span>Fri-Sun: 12PM-2AM</span>
+                            </div>
+                            <div class="venue-actions">
+                                <button class="view-menu-btn">View Menu</button>
+                                <button class="book-table-btn">Book Table</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card">
+                        <div class="venue-image" style="background-image: url('../assets/images/brooklyn-rooftop.jpg');"></div>
+                        <div class="venue-content">
+                            <h3 class="venue-name">Rooftop Terrace</h3>
+                            <p class="venue-description">Seasonal rooftop with skyline views and outdoor dining</p>
+                            <div class="venue-hours">
+                                <span>May-Sep: 11AM-10PM</span>
+                                <span>Weather permitting</span>
+                            </div>
+                            <div class="venue-actions">
+                                <button class="view-menu-btn">View Menu</button>
+                                <button class="book-table-btn">Book Table</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Neighborhood -->
+        <section class="property-neighborhood" id="neighborhood">
+            <div class="container">
+                <h2 class="section-title">Neighborhood</h2>
+                <div class="neighborhood-intro">
+                    <p>Williamsburg is Brooklyn's creative epicenter, where industrial warehouses house art galleries, vintage shops sit alongside trendy restaurants, and the energy of New York's artistic community pulses through every street.</p>
+                </div>
+                <div class="neighborhood-categories">
+                    <div class="category-section">
+                        <h3>Coffee</h3>
+                        <div class="picks-list">
+                            <div class="pick-item">
+                                <h4>Blue Bottle Coffee</h4>
+                                <p>Third-wave coffee in a minimalist space</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                            <div class="pick-item">
+                                <h4>Toby's Estate Coffee</h4>
+                                <p>Australian cafe culture meets Brooklyn</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h3>Art Galleries</h3>
+                        <div class="picks-list">
+                            <div class="pick-item">
+                                <h4>Modern Art Gallery</h4>
+                                <p>Contemporary works from emerging artists</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                            <div class="pick-item">
+                                <h4>Williamsburg Art Center</h4>
+                                <p>Community-focused exhibitions and workshops</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h3>Shopping</h3>
+                        <div class="picks-list">
+                            <div class="pick-item">
+                                <h4>Brooklyn Flea Market</h4>
+                                <p>Vintage finds and artisan goods on weekends</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                            <div class="pick-item">
+                                <h4>Bedford Avenue Boutiques</h4>
+                                <p>Independent fashion and design shops</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h3>Nightlife</h3>
+                        <div class="picks-list">
+                            <div class="pick-item">
+                                <h4>Music Hall of Williamsburg</h4>
+                                <p>Live music venue featuring indie and alternative acts</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                            <div class="pick-item">
+                                <h4>Output Nightclub</h4>
+                                <p>Underground electronic music scene</p>
+                                <button class="directions-btn">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Private Spaces -->
+        <section class="property-private" id="private">
+            <div class="container">
+                <h2 class="section-titleidates & Private Spaces</h2>
+                <div class="private-content">
+                    <div class="private-info">
+                        <h3>Host Your Event at Anania Brooklyn</h3>
+                        <p>Our industrial-chic spaces provide the perfect backdrop for weddings, corporate events, and special celebrations. From intimate gatherings in our gallery space to grand events on the rooftop terrace, we offer versatile venues that capture Brooklyn's creative spirit.</p>
+                        <div class="private-features">
+                            <ul>
+                                <li>Flexible event spaces for 10-200 guests</li>
+                                <li>In-house catering and bar services</li>
+                                <li>Audio-visual equipment available</li>
+                                <li>Dedicated event planning team</li>
+                                <li>Guest room blocks for attendees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="private-form">
+                        <h3>Request Information</h3>
+                        <form class="rfp-form" id="rfpForm">
+                            <div class="form-group">
+                                <label for="eventType">Event Type</label>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="social">Social Celebration</option>
+                                    <option value="meeting">Business Meeting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eventDate">Preferred Date</label>
+                                    <input type="date" id="eventDate" name="eventDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="guestCount">Number of Guests</label>
+                                    <input type="number" id="guestCount" name="guestCount" min="1" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactName">Name</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventDetails">Event Details</label>
+                                <textarea id="eventDetails" name="eventDetails" rows="4" placeholder="Tell us about your vision..."></textarea>
+                            </div>
+                            <button type="submit" class="rfp-submit">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The A-List</h3>
+                    <p>Get stories, offers, and goings-on.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="../privacy.html">Privacy</a></li>
+                            <li><a href="../accessibility.html">Accessibility</a></li>
+                            <li><a href="../careers.html">Careers</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                            <li><a href="../press.html">Press</a></li>
+                            <li><a href="../gift-cards.html">Gift Cards</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Anania Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Overlay -->
+    <div class="booking-overlay" id="bookingOverlay">
+        <div class="booking-modal">
+            <div class="booking-header">
+                <h2>Book Your Stay</h2>
+                <button class="close-booking" id="closeBooking">×</button>
+            </div>
+            <div class="booking-content">
+                <div class="booking-step active" id="step1">
+                    <h3>Search Parameters</h3>
+                    <form class="booking-form" id="searchForm">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location" name="location">
+                                <option value="">Select Location</option>
+                                <option value="athens">Athens</option>
+                                <option value="brooklyn">Brooklyn</option>
+                                <option value="kyoto">Kyoto</option>
+                                <option value="nyc">New York</option>
+                                <option value="palmsprings">Palm Springs</option>
+                                <option value="seattle">Seattle</option>
+                                <option value="sydney">Sydney</option>
+                                <option value="toronto">Toronto</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <select id="guests" name="guests">
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="rooms">Rooms</label>
+                                <select id="rooms" name="rooms">
+                                    <option value="1">1 Room</option>
+                                    <option value="2">2 Rooms</option>
+                                    <option value="3">3 Rooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="codeType">Code Type</label>
+                            <select id="codeType" name="codeType">
+                                <option value="">None</option>
+                                <option value="group">Group</option>
+                                <option value="promo">Promo</option>
+                                <option value="corporate">Corporate</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="codeGroup" style="display: none;">
+                            <label for="code">Code</label>
+                            <input type="text" id="code" name="code" placeholder="Enter code">
+                        </div>
+                        <button type="submit" class="booking-submit">Search Availability</button>
+                    </form>
+                </div>
+                <div class="booking-step" id="step2">
+                    <h3>Select Room</h3>
+                    <div class="rooms-list" id="roomsList">
+                        <!-- Rooms will be populated dynamically -->
+                    </div>
+                </div>
+                <div class="booking-step" id="step3">
+                    <h3>Guest Details</h3>
+                    <form class="booking-form" id="guestForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" name="cardNumber" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="booking-submit">Complete Booking</button>
+                    </form>
+                </div>
+                <div class="booking-step" id="step4">
+                    <h3>Confirmation</h3>
+                    <div class="confirmation-content">
+                        <div class="success-message">
+                            <h2>Booking Confirmed!</h2>
+                            <p>Your reservation number is: <strong>#AN2024121801</strong></p>
+                        </div>
+                        <div class="booking-summary">
+                            <div class="summary-item">
+                                <span class="label">Property:</span>
+                                <span class="value" id="summaryProperty"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="label">Dates:</span>
+                                <span class="value" id="summaryDates"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="label">Guests:</span>
+                                <span class="value" id="summaryGuests"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="label">Room Type:</span>
+                                <span class="value" id="summaryRoom"></span>
+                            </div>
+                            <div class="summary-item total">
+                                <span class="label">Total:</span>
+                                <span class="value" id="summaryTotal"></span>
+                            </div>
+                        </div>
+                        <div class="confirmation-actions">
+                            <button class="btn-secondary">Add to Calendar</button>
+                            <button class="btn-primary">Modify/Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Property-specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            setupPropertyNavigation();
+            setupEventFilters();
+            setupPropertyBooking();
+            setupRFPForm();
+        });
+
+        function setupPropertyNavigation() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            
+            // Smooth scroll to sections
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        const headerHeight = document.querySelector('.global-header').offsetHeight;
+                        const navHeight = document.querySelector('.property-nav')?.offsetHeight || 0;
+                        const targetPosition = targetSection.offsetTop - headerHeight - navHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Update active nav on scroll
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        }
+
+        function setupEventFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const eventItems = document.querySelectorAll('.event-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.dataset.filter;
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Filter events
+                    eventItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'flex';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        function setupPropertyBooking() {
+            // Property-specific booking buttons
+            const bookPropertyBtn = document.querySelector('.book-property-btn');
+            const bookRoomBtns = document.querySelectorAll('.book-room-btn');
+            const offerCtas = document.querySelectorAll('.offer-cta');
+            
+            if (bookPropertyBtn) {
+                bookPropertyBtn.addEventListener('click', () => {
+                    openBookingOverlay({
+                        location: 'brooklyn'
+                    });
+                });
+            }
+            
+            bookRoomBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const roomCard = btn.closest('.room-card');
+                    const roomType = roomCard.dataset.roomType;
+                    const roomName = roomCard.querySelector('.room-name').textContent;
+                    
+                    openBookingOverlay({
+                        location: 'brooklyn',
+                        roomType: roomType,
+                        roomName: roomName
+                    });
+                });
+            });
+            
+            offerCtas.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const promoCode = btn.dataset.promoCode;
+                    openBookingOverlay({
+                        location: 'brooklyn',
+                        promoCode: promoCode
+                    });
+                });
+            });
+        }
+
+        function setupRFPForm() {
+            const rfpForm = document.getElementById('rfpForm');
+            
+            if (rfpForm) {
+                rfpForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(rfpForm);
+                    const rfpData = Object.fromEntries(formData);
+                    
+                    // Show success message
+                    showRFPSuccess();
+                    rfpForm.reset();
+                    
+                    console.log('RFP submitted:', rfpData);
+                });
+            }
+        }
+
+        function showRFPSuccess() {
+            const successMessage = document.createElement('div');
+            successMessage.className = 'rfp-success';
+            successMessage.innerHTML = `
+                <p>Thank you for your interest! Our events team will contact you within 24 hours.</p>
+            `;
+            
+            const formSection = document.querySelector('.private-form');
+            if (formSection) {
+                formSection.appendChild(successMessage);
+                
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 5000);
+            }
+        }
+    </script>
+</body>
+</html>
