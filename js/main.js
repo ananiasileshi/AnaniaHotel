@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initializeApp() {
     setupHeaderScroll();
+    setupMobileMenu();
     setupLocationsDropdown();
     setupBookingOverlay();
     setupNewsletterForm();
@@ -38,6 +39,66 @@ function setupHeaderScroll() {
         
         lastScrollY = currentScrollY;
     });
+}
+
+function setupMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const headerNav = document.querySelector('.header-nav');
+    const locationsToggle = document.getElementById('locationsToggle');
+    const locationsMenu = document.getElementById('locationsMenu');
+    
+    if (mobileMenuToggle && headerNav) {
+        mobileMenuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isActive = headerNav.classList.contains('active');
+            
+            if (!isActive) {
+                headerNav.classList.add('active');
+                mobileMenuToggle.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                closeMobileMenu();
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (headerNav.classList.contains('active') && 
+                !headerNav.contains(e.target) && 
+                !mobileMenuToggle.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && headerNav.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        });
+    }
+}
+
+function closeMobileMenu() {
+    const headerNav = document.querySelector('.header-nav');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const locationsMenu = document.getElementById('locationsMenu');
+    const locationsToggle = document.getElementById('locationsToggle');
+    
+    if (headerNav) {
+        headerNav.classList.remove('active');
+    }
+    if (mobileMenuToggle) {
+        mobileMenuToggle.classList.remove('active');
+    }
+    if (locationsMenu) {
+        locationsMenu.classList.remove('active');
+    }
+    if (locationsToggle) {
+        locationsToggle.classList.remove('active');
+    }
+    
+    document.body.style.overflow = '';
 }
 
 function setupLocationsDropdown() {
